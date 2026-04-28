@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Chocolate Escape: A fun and cute endless runner game by Laraib. Help the bear collect chocolates and escape the beach! Play Level 1-20 now." />
+  <meta property="og:title" content="Chocolate Escape - Beach Runner Game" />
+  <meta property="og:description" content="Help the cute bear escape the beach and collect chocolates in this fun 20-level runner game by Laraib." />
+  <meta property="og:type" content="website" />
+  <title>Chocolate Escape - Beach Runner Game | by Laraib</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap" data-testid="game-container">
+    <header class="topbar">
+      <div class="brand" data-testid="text-title">
+        🍫 Chocolate Escape
+        <div class="author" data-testid="text-publisher">Published by: Laraib</div>
+      </div>
+      <div class="hud">
+        <div data-testid="display-time">Time: <span id="time">60.0</span>s</div>
+        <div data-testid="display-chocs">Chocolates: <span id="chocs">0</span></div>
+        <div data-testid="display-score">Score: <span id="score">0</span></div>
+      </div>
+    </header>
+
+    <main class="gameShell">
+      <div id="game" data-testid="game-world">
+        <div id="sun"></div>
+        <div id="cloud1" class="cloud"></div>
+        <div id="cloud2" class="cloud"></div>
+
+        <div id="ocean"></div>
+        <div id="ground" data-testid="game-ground"></div>
+
+        <div id="player" data-testid="bear-character">
+          <div class="bear-face">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="snout"></div>
+          </div>
+        </div>
+
+        <div id="overlay" class="overlay" data-testid="game-overlay">
+          <h1 id="title" data-testid="text-start-prompt">Tap / Click to Start</h1>
+          <p id="subtitle">Tap/click to jump • Collect 🍫 • Avoid obstacles • 60 seconds to escape!</p>
+          <button id="startBtn" data-testid="button-start">Start</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      Tip: Press <b>Space</b> to jump (optional). • © <span id="year" data-testid="text-copyright"></span> Laraib+
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
